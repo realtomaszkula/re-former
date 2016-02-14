@@ -7,3 +7,9 @@
     <%= f.password_field :password, placeholder: "case sensitive" %> <br>
   <%= f.submit "Send" %>
 <% end %>
+
+<% unless @user.errors.empty? %>
+  <% @user.errors.full_messages.each do |e| %>
+    <p> <%= e  %> </p>
+  <% end %>
+<% end %>

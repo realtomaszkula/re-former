@@ -1,3 +1,7 @@
-div {
-  width: 150px;
+container {
+  text-align: center;
+}
+
+form {
+  margin-top: 200px;
 }
